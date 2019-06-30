@@ -50,11 +50,11 @@ static uint64_t time_us(void)
 int main(int argc, const char * const *argv)
 {
 	yespower_params_t params = {
-		.version = YESPOWER_0_5,
+		.version = YESPOWER_1_0,
 		.N = 2048,
-		.r = 8,
-		.pers = (const uint8_t *)"Client Key",
-		.perslen = 10
+		.r = 32,
+		.pers = (const uint8_t *)"Sugarchain: Decentralized Cryptocurrency for one-CPU-one-vote",
+		.perslen = 61
 	};
 
 	if (argc > 1)
